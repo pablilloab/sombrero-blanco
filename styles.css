@@ -1,0 +1,36 @@
+/* Eliminar márgenes por defecto del navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo de color y centrar contenido */
+body {
+    min-height: 100vh;
+    /* ocupa toda la altura de la pantalla */
+    display: flex;
+    justify-content: center;
+    /* centra horizontalmente */
+    align-items: center;
+    /* centra verticalmente */
+    background-color: #858282de;
+    /* azul grisáceo oscuro (podés cambiarlo) */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* Contenedor principal (por ahora solo contiene la imagen) */
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Imagen centrada y con tamaño máximo */
+.logo {
+    max-width: 60vw;
+    /* no ocupa más del 60% del ancho de la pantalla */
+    max-height: 60vh;
+    /* no ocupa más del 60% de la altura de la pantalla */
+    object-fit: contain;
+}
